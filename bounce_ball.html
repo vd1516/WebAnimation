@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            border-radius: 100px;
+            animation-name: bounce;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+            animation-direction: alternate;
+        }
+        .a{
+            background-color: red;
+            animation-delay: 0.1s;
+        }
+        .b{
+            background-color: yellow;
+            animation-delay: 0.3s;
+        }
+        .c{
+            background-color: blue;
+            animation-delay: 0.6s;
+        }
+        .d{
+            background-color: green;
+            animation-delay: 0.9s;
+        }
+        .e{
+            background-color: violet;
+            animation-delay: 1.2s;
+        }
+        .f{
+            background-color: lightblue;
+            animation-delay: 1.5s;
+        }
+
+        @keyframes bounce{
+            0%{
+                transform: translateY(0px);
+                opacity: 0;
+            }
+            100%{
+                transform: translateY(500px);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main a"></div>
+    <div class="main b"></div>
+    <div class="main c"></div>
+    <div class="main d"></div>
+    <div class="main e"></div>
+    <div class="main f"></div>
+</body>
+</html>
